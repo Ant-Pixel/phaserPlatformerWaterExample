@@ -33,10 +33,13 @@ config.menuState = {
 config.default.stateManager = {
     bootState: "boot",
     loadState: "load",
-    menuState: "menu"
+    menuState: "menu",
+    level1State: "level1"
 }
 
+config.level1State = {
 
+}
 
 let isNodeJsCompatible = typeof module !== "undefined"
 if (isNodeJsCompatible)  {
