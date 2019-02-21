@@ -14,9 +14,18 @@ const loadState = {
             config.loadState.label.print,
             config.loadState.style
         );
+        let menuLogoData = [
+            config.menuState.logo.spriteKey,
+            config.menuState.logo.spriteSrc
+        ];
+        let playerData = [
+            config.level1State.player.spriteKey,
+            config.level1State.player.spriteSrc
+        ];
 
         //Load your images, spritesheets, bitmaps...
-        game.load.image(config.menuState.logo.spriteKey, config.menuState.logo.spriteSrc);
+        game.load.image(...menuLogoData);
+        game.load.image(...playerData);
 
 
         //Load your sounds, efx, music...

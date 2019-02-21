@@ -38,7 +38,12 @@ config.default.stateManager = {
 }
 
 config.level1State = {
-
+    player: {
+        x: config.default.gameSpecs.width * 0.5,
+        y: config.default.gameSpecs.height * 0.5,
+        spriteKey: "player1sprite",
+        spriteSrc: "assets/img/phaser-dude.png"
+    }
 }
 
 let isNodeJsCompatible = typeof module !== "undefined"
