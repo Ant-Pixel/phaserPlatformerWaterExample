@@ -30,8 +30,8 @@ config.menuState = {
 };
 
 config.waterBubbles = {
-    particleImageSrc: "assets/img/phaserBubble.png",
-    particleImageKey: "waterBubble",
+    spriteSrc: "assets/img/phaserBubble.png",
+    spriteKey: "waterBubble",
     emitX: config.default.gameSpecs.width*0.5,
     emitY: config.default.gameSpecs.width*0.5,
     maxParticles: 1,
