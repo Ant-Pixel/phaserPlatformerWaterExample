@@ -15,5 +15,6 @@ let game = new Phaser.Game(
 game.state.add(config.default.stateManager.bootState, bootState);
 game.state.add(config.default.stateManager.loadState, loadState);
 game.state.add(config.default.stateManager.menuState, menuState);
+game.state.add(config.default.stateManager.level1State, level1State);
 
 game.state.start(config.default.stateManager.bootState);
