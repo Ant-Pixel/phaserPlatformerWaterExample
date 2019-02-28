@@ -29,6 +29,41 @@ config.menuState = {
     }
 };
 
+config.waterBubbles = {
+    particleImageSrc: "assets/img/phaserBubble.png",
+    particleImageKey: "waterBubble",
+    emitX: config.default.gameSpecs.width*0.5,
+    emitY: config.default.gameSpecs.width*0.5,
+    maxParticles: 1,
+    minLifespan: 2000,
+    maxLifespan: 2000,
+    xOffset: 0,
+    yOffset: 0,
+    xGravity: 0,
+    yGravity: 0,
+    particleSpeed: {
+        minParticleXSpeed: 0,
+        maxParticleXSpeed: 0,
+        minParticleYSpeed: -200,
+        maxParticleYSpeed: -200,
+    }
+    particleScale: {
+        minParticleXScale: 0,
+        maxParticleXScale: 0,
+        minParticleYScale: 1.5,
+        maxParticleYScale: 1.5,
+        minParticleScale: 0,
+        maxParticleScale: 1.5
+    }
+    particleAlpha: {
+        minAlpha: 1,
+        maxAlpha: 0,
+        alphaEasingRate: 2000,
+        alphaEasingFormula: Phaser.Easing.Linear.None,
+        alphaYoyo: false
+    }
+}
+
 
 config.default.stateManager = {
     bootState: "boot",
