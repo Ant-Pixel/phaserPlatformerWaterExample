@@ -23,8 +23,8 @@ const loadState = {
             config.level1State.player.spriteSrc
         ];
         let waterBubbleData = [
-            config.waterBubbles.spriteKey,
-            config.waterBubbles.spriteSrc
+            config.default.waterBubbles.spriteKey,
+            config.default.waterBubbles.spriteSrc
         ]
 
         //Load your images, spritesheets, bitmaps...
