@@ -28,6 +28,8 @@ const loadState = {
         game.load.image(...playerData);
 
 
+        game.load.image('bubble', 'assets/img/phaserBubble.png');        
+
         //Load your sounds, efx, music...
         //Example: game.load.audio('rockas', 'assets/snd/rockas.wav');
 
