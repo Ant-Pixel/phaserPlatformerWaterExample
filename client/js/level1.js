@@ -20,8 +20,8 @@ level1State.create = () => {
 };
 
 level1State.update = () => {
-    level1State.player.body.velocity.x = 10;
+    //level1State.player.body.velocity.x = 10;
     //console.log(level1State.player.body.x);
     //console.log(level1State.player.body.y);
-    waterBubbles.update(level1State.player.body.x, level1State.player.body.y);
+    //waterBubbles.update(level1State.player.body.x, level1State.player.body.y);
 };
