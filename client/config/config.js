@@ -50,21 +50,21 @@ config.default.waterBubbles = {
     particleSpeed: {
         minParticleXSpeed: 0,
         maxParticleXSpeed: 0,
-        minParticleYSpeed: -200,
-        maxParticleYSpeed: -200
+        minParticleYSpeed: -100,
+        maxParticleYSpeed: -100
     },
     particleScale: {
-        minParticleXScale: 0,
-        maxParticleXScale: 1.5,
-        minParticleYScale: 0,
-        maxParticleYScale: 1.5,
+        minParticleXScale: 0.2,
+        maxParticleXScale: 0.2,
+        minParticleYScale: 0.2,
+        maxParticleYScale: 0.2,
         scaleEasingRate: 1000,
         scaleEasingFormula: Phaser.Easing.Linear.None,
         scaleYoyo: false
     },
     particleAlpha: {
         minAlpha: 1,
-        maxAlpha: 0,
+        maxAlpha: 1,
         alphaEasingRate: 2000,
         alphaEasingFormula: Phaser.Easing.Linear.None,
         alphaYoyo: false
