@@ -55,8 +55,8 @@ config.default.waterBubbles = {
     },
     particleScale: {
         minParticleXScale: 0,
-        maxParticleXScale: 0,
-        minParticleYScale: 1.5,
+        maxParticleXScale: 1.5,
+        minParticleYScale: 0,
         maxParticleYScale: 1.5,
         scaleEasingRate: 1000,
         scaleEasingFormula: Phaser.Easing.Linear.None,
