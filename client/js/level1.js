@@ -14,5 +14,5 @@ level1State.create = () => {
 };
 
 level1State.update = () => {
-    level1State.player.body.velocity.x = 200;
+    level1State.player.body.velocity.x = 10;
 };
