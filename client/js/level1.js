@@ -1,5 +1,9 @@
 const level1State = {};
 
+level1State.init = () => {
+    waterBubbles.init(game);
+}
+
 level1State.create = () => {
     console.log("We are in the create state!!!");
     let playerData = [
@@ -11,13 +15,12 @@ level1State.create = () => {
     game.physics.arcade.enable(player);
 
     level1State.player = player;
-    level1State.emitter = game.add.emitter(game.world.centerX, 200, 200);
-    level1State.emitter.makeParticles(config.default.waterBubbles.spriteKey);
-    level1State.emitter.start(false, 5000, 5);
+    level1State.emitter = waterBubbles.create(game.world.centerX, 200);
 };
 
 level1State.update = () => {
     level1State.player.body.velocity.x = 10;
-    level1State.emitter.emitX = level1State.player.x + (level1State.player.width*0.5);
-    level1State.emitter.emitY = level1State.player.y + (level1State.player.height*0.5);
+    let newEmitX = level1State.player.x + (level1State.player.width*0.5);
+    let newEmitY = level1State.player.y + (level1State.player.height*0.5);
+    waterBubbles.update(newEmitX, newEmitY);
 };
