@@ -22,11 +22,15 @@ const loadState = {
             config.level1State.player.spriteKey,
             config.level1State.player.spriteSrc
         ];
+        let waterBubbleData = [
+            config.default.waterBubbles.spriteKey,
+            config.default.waterBubbles.spriteSrc
+        ]
 
         //Load your images, spritesheets, bitmaps...
         game.load.image(...menuLogoData);
         game.load.image(...playerData);
-
+        game.load.image(...waterBubbleData);
 
         //Load your sounds, efx, music...
         //Example: game.load.audio('rockas', 'assets/snd/rockas.wav');
