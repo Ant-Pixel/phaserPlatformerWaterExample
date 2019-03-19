@@ -33,6 +33,7 @@ waterBubbles.create = (emitX, emitY, bubblesDisappearY) => {
 
 	let rotationData = [config.default.waterBubbles.particleRotation.minRotation, config.default.waterBubbles.particleRotation.maxRotation];
 	emitter.setRotation(...rotationData);
+	emitter.angularDrag = config.default.waterBubbles.particleRotation.angularDrag;
 
 	let generalEmitterData = [config.default.waterBubbles.explode, lifespan, config.default.waterBubbles.frequency, config.default.waterBubbles.quantity, config.default.waterBubbles.forceQuantity];
 	emitter.start(...generalEmitterData);

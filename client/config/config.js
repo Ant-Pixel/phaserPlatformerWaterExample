@@ -71,7 +71,8 @@ config.default.waterBubbles = {
     },
     particleRotation: {
         minRotation: 0,
-        maxRotation: 0
+        maxRotation: 0,
+        angularDrag: 0
     }
 }
 
