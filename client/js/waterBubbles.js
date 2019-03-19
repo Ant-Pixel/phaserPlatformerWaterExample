@@ -15,6 +15,7 @@ waterBubbles.create = (emitX, emitY, bubblesDisappearY) => {
 	let alphaEasingRate = bubbleTravelTime*1000;
 	let scaleEasingRate = bubbleTravelTime*1000;
 
+
 	waterBubbles.emitter = game.add.emitter(emitX, emitY, config.default.waterBubbles.maxParticles);
 	let emitter = waterBubbles.emitter;
     emitter.makeParticles(config.default.waterBubbles.spriteKey);
@@ -29,6 +30,9 @@ waterBubbles.create = (emitX, emitY, bubblesDisappearY) => {
 
 	let alphaData = [config.default.waterBubbles.particleAlpha.minAlpha, config.default.waterBubbles.particleAlpha.maxAlpha, alphaEasingRate, config.default.waterBubbles.particleAlpha.alphaEasingFormula, config.default.waterBubbles.particleAlpha.alphaYoyo];
 	emitter.setAlpha(...alphaData);
+
+	let rotationData = [config.default.waterBubbles.particleRotation.minRotation, config.default.waterBubbles.particleRotation.maxRotation];
+	emitter.setRotation(...rotationData);
 
 	let generalEmitterData = [config.default.waterBubbles.explode, lifespan, config.default.waterBubbles.frequency, config.default.waterBubbles.quantity, config.default.waterBubbles.forceQuantity];
 	emitter.start(...generalEmitterData);

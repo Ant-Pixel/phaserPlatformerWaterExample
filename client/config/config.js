@@ -68,6 +68,10 @@ config.default.waterBubbles = {
         alphaEasingRate: 2000,
         alphaEasingFormula: Phaser.Easing.Linear.None,
         alphaYoyo: false
+    },
+    particleRotation: {
+        minRotation: 0,
+        maxRotation: 0
     }
 }
 
